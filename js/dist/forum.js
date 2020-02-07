@@ -118,6 +118,10 @@ __webpack_require__.r(__webpack_exports__);
 
 Object(flarum_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_components_HeaderSecondary__WEBPACK_IMPORTED_MODULE_1___default.a.prototype, 'items', function (items) {
   items.remove('logIn');
+  items.remove('locale');
+  items.add('backToCourses', m("a", {
+    href: "http://beta.myguitare.com/"
+  }, "Retourner sur vos cours"));
 });
 
 /***/ }),
