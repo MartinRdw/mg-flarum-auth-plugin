@@ -120,8 +120,14 @@ Object(flarum_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_components_H
   items.remove('logIn');
   items.remove('locale');
   items.add('backToCourses', m("a", {
-    href: "http://beta.myguitare.com/"
-  }, "Retourner sur vos cours"));
+    href: "/"
+  }, "Accueil Communaut\xE9"));
+});
+var coursesUrl = 'https://beta.myguitare.com';
+var logo = $('#home-link');
+logo.attr('href', coursesUrl);
+logo.click(function () {
+  window.location.replace(coursesUrl);
 });
 
 /***/ }),
